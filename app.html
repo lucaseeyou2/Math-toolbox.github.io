@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Math toolbox</title>
+  </head>
+
+  <body>
+    <nav>
+      <div id="title">Math</div>
+    </nav>
+    <article>
+      <div id="sub">Surface area</div>
+      <main>
+        <div id="cont">
+          <div>
+            <div id="n">Square</div>
+            <div id="square"></div>
+
+            <div id="f">
+              <div><i>x</i> = <input type="number" id="sa_in" maxlength="150" /></div>
+            </div>
+
+            <div class="area">area = <span id="square_area"></span></div>
+          </div>
+          <div>
+            <div id="n">Rectangle</div>
+            <div id="rectangle"></div>
+
+            <div id="f">
+              <div><i>x</i> = <input type="number" id="re_ix" maxlength="150" /></div>
+              <div><i>y</i> = <input type="number" id="re_iy" maxlength="150" /></div>
+            </div>
+
+            <div class="area">area = <span id="rtangle_area"></span></div>
+          </div>
+          <div>
+            <div id="n">Circle</div>
+            <div id="circle"></div>
+            <div id="f">
+              <div><i>r</i> = <input type="number" id="ci_in" maxlength="150" /></div>
+            </div>
+
+            <div class="area">area = <span id="circle_area"></span></div>
+          </div>
+
+          <div>
+            <div id="n">Triangle</div>
+            <div id="triangle"></div>
+            <div id="triangle_shadow"></div>
+
+            <div id="triangle_exept">
+              <div id="f">
+                <div><i>b</i> = <input type="number" id="tr_b" /></div>
+                <div><i>h</i> = <input type="number" id="tr_h" /></div>
+              </div>
+
+              <div class="area">area = <span id="triangle_area"></span></div>
+            </div>
+          </div>
+
+          <div>
+            <div id="n">Ellipse</div>
+            <div id="ellipse"></div>
+
+            <div id="f">
+              <div><i>x</i> = <input type="number" id="el_x" /></div>
+              <div><i>y</i> = <input type="number" id="el_y" /></div>
+            </div>
+
+            <div class="area">area = <span id="ellipse_area"></span></div>
+          </div>
+
+          <div>
+            <div id="n">Parallelogram</div>
+            <div id="parallelogram"></div>
+
+            <div id="f">
+              <div><i>b</i> = <input type="number" id="pa_b" /></div>
+              <div><i>h</i> = <input type="number" id="pa_h" /></div>
+            </div>
+            <div class="area">area = <span id="parallelogram_area"></span></div>
+          </div>
+
+          <div>
+            <div id="n">Trapezium / Trapezoid</div>
+            <div id="trapezium"></div>
+            <div id="trapezium_shadow"></div>
+
+            <div id="triangle_exept">
+              <div id="f" class="pad_n">
+                <div><i>a</i> = <input type="number" id="ta_a" /></div>
+                <div><i>b</i> = <input type="number" id="ta_b" /></div>
+                <div><i>h</i> = <input type="number" id="ta_h" /></div>
+              </div>
+              <div class="area">area = <span id="trapezium_area"></span></div>
+            </div>
+          </div>
+
+          <div>
+            <div id="n">Cube</div>
+            <div id="cube"></div>
+            <div id="f">
+              <div><i>s</i> = <input type="number" id="cu_s" /></div>
+            </div>
+
+            <div class="area">area = <span id="cube_area"></span></div>
+          </div>
+          <div>
+            <div id="n">Cuboid</div>
+            <div id="cuboid"></div>
+
+            <div id="f">
+              <div><i>l</i> = <input type="number" id="cb_l" /></div>
+              <div><i>w</i> = <input type="number" id="cb_w" /></div>
+              <div><i>h</i> = <input type="number" id="cb_h" /></div>
+            </div>
+            <div class="area">area = <span id="cuboid_area"></span></div>
+          </div>
+        </div>
+      </main>
+      <div id="transition">
+        <div id="sub"><a href="#formulas" id="formulas" class="sbt">Formulas</a></div>
+        <div id="cont">
+          <div>
+            <div id="n">Quadratic formula</div>
+            <div id="fn"><i>x</i> = <i>-b</i> &#177; &#8730;(<i>b</i><sup>2</sup>-4<i>ac</i>) /2<i>a</i></div>
+
+            <div id="f">
+              <div><i>a</i> = <input type="number" id="fq_a" /></div>
+              <div><i>b</i> = <input type="number" id="fq_b" /></div>
+              <div><i>c</i> = <input type="number" id="fq_c" /></div>
+            </div>
+            <div class="result"><i>x</i> = <span id="quadratic_result"></span> or <span id="quadratic_result_2"></span></div>
+          </div>
+
+          <div>
+            <div id="n">Distance formula</div>
+            <div id="fn">
+              <i>d</i> = &#8730;[(<i>x</i><sub>2</sub> - <i>x</i><sub>1</sub>)<sup>2</sup> + (<i>y</i><sub>2</sub> - <i>y</i
+              ><sub>1</sub>)<sup>2</sup>]
+            </div>
+            <div id="f">
+              <div><i>x<sub>1</sub></i> = <input type="number" id="df_x1"/></div>
+              <div><i>x<sub>2</sub></i> = <input type="number" id="df_x2"/></div>
+              <div><i>y<sub>1</sub></i> = <input type="number" id="df_y1"/></div>
+              <div><i>y<sub>2</sub></i> = <input type="number" id="df_y2"/></div>
+            </div>
+            <div class="result"><i>d</i> = <span id="distance_formula"></span></div>
+          </div>
+
+          <div>
+            <div id="n">Mid-point formula</div>
+            <div id="fn">
+              <i>M</i> = [(<i>x</i><sub>1</sub> + <i>x</i><sub>2</sub>)/ 2 , (<i>y</i><sub>1</sub> + <i>y</i><sub>2</sub>)/ 2]
+            </div>
+
+            <div id="f">
+              <div><i>x<sub>1</sub></i> = <input type="number" id="mp_x1"/></div>
+              <div><i>x<sub>2</sub></i> = <input type="number" id="mp_x2"/></div>
+              <div><i>y<sub>1</sub></i> = <input type="number" id="mp_y1"/></div>
+              <div><i>y<sub>2</sub></i> = <input type="number" id="mp_y2"/></div>
+            </div>
+
+            <div class="result"><i id="i">M</i> = <span id="mp_formula"></span></div>
+          </div>
+
+          <div>
+            <div id="n">Arcosine</div>
+            <div id="fn">
+            <i>arccot</i>(<i>x</i>)
+            </div>
+
+            <div id="f">
+              <div><i>x</i> = <input type="number" id="arccot_x" placeholder="0"></div>
+            </div>
+            <div class="result"><i>arccot</i> = <span id="arccot"></span></div>
+          </div>
+
+        </div>
+      </div>
+    </article>
+    <script src="app.js"></script>
+  </body>
+</html>

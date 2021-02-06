@@ -19,34 +19,28 @@
           <div>
             <div id="n">Square</div>
             <div id="square"></div>
-
             <div id="f">
-              <div><i>x</i> = <input type="number" id="sa_in" maxlength="150" /></div>
+              <div><i>x</i> = <input type="number" id="sa_in" maxlength="100" /></div>
             </div>
-
             <div class="area">area = <span id="square_area"></span></div>
           </div>
           <div>
             <div id="n">Rectangle</div>
             <div id="rectangle"></div>
-
             <div id="f">
-              <div><i>x</i> = <input type="number" id="re_ix" maxlength="150" /></div>
-              <div><i>y</i> = <input type="number" id="re_iy" maxlength="150" /></div>
+              <div><i>x</i> = <input type="number" id="re_ix" maxlength="100" /></div>
+              <div><i>y</i> = <input type="number" id="re_iy" maxlength="100" /></div>
             </div>
-
             <div class="area">area = <span id="rtangle_area"></span></div>
           </div>
           <div>
             <div id="n">Circle</div>
             <div id="circle"></div>
             <div id="f">
-              <div><i>r</i> = <input type="number" id="ci_in" maxlength="150" /></div>
+              <div><i>r</i> = <input type="number" id="ci_in" maxlength="100" /></div>
             </div>
-
             <div class="area">area = <span id="circle_area"></span></div>
           </div>
-
           <div>
             <div id="n">Triangle</div>
             <div id="triangle"></div>
@@ -57,39 +51,31 @@
                 <div><i>b</i> = <input type="number" id="tr_b" /></div>
                 <div><i>h</i> = <input type="number" id="tr_h" /></div>
               </div>
-
               <div class="area">area = <span id="triangle_area"></span></div>
             </div>
           </div>
-
           <div>
             <div id="n">Ellipse</div>
             <div id="ellipse"></div>
-
             <div id="f">
               <div><i>x</i> = <input type="number" id="el_x" /></div>
               <div><i>y</i> = <input type="number" id="el_y" /></div>
             </div>
-
             <div class="area">area = <span id="ellipse_area"></span></div>
           </div>
-
           <div>
             <div id="n">Parallelogram</div>
             <div id="parallelogram"></div>
-
             <div id="f">
               <div><i>b</i> = <input type="number" id="pa_b" /></div>
               <div><i>h</i> = <input type="number" id="pa_h" /></div>
             </div>
             <div class="area">area = <span id="parallelogram_area"></span></div>
           </div>
-
           <div>
             <div id="n">Trapezium / Trapezoid</div>
             <div id="trapezium"></div>
             <div id="trapezium_shadow"></div>
-
             <div id="triangle_exept">
               <div id="f" class="pad_n">
                 <div><i>a</i> = <input type="number" id="ta_a" /></div>
@@ -99,20 +85,17 @@
               <div class="area">area = <span id="trapezium_area"></span></div>
             </div>
           </div>
-
           <div>
             <div id="n">Cube</div>
             <div id="cube"></div>
             <div id="f">
               <div><i>s</i> = <input type="number" id="cu_s" /></div>
             </div>
-
             <div class="area">area = <span id="cube_area"></span></div>
           </div>
           <div>
             <div id="n">Cuboid</div>
             <div id="cuboid"></div>
-
             <div id="f">
               <div><i>l</i> = <input type="number" id="cb_l" /></div>
               <div><i>w</i> = <input type="number" id="cb_w" /></div>
@@ -122,13 +105,86 @@
           </div>
         </div>
       </main>
-      <div id="transition">
+      <div class="transition">
+        <div class="sub"><a href="#volume" id="volume" class="sbt">Volume</a></div>
+        <div id="cont">
+          <div>
+            <div id="n">Cube</div>
+            <div id="fn">
+              <i><abbr title="volume">V</abbr></i> = <i><abbr title="side of a cube">a</abbr></i
+              ><sup>3</sup>
+            </div>
+            <div id="f">
+              <div><i>a</i> = <input type="number" id="c_vol" /></div>
+            </div>
+            <div class="result"><i id="i">V</i> = <span id="volume_cube_result"></span></div>
+          </div>
+          <div>
+            <div id="n">Cuboid</div>
+            <div id="fn"><i>V</i> = <i>abc</i></div>
+            <div id="f">
+              <div><i>a</i> = <input type="number" id="cboid_a" /></div>
+              <div><i>b</i> = <input type="number" id="cboid_b" /></div>
+              <div><i>c</i> = <input type="number" id="cboid_c" /></div>
+            </div>
+            <div class="result"><i id="i">V</i> = <span id="volume_cuboid_result"></span></div>
+          </div>
+          <div>
+            <div id="n">Prism</div>
+            <div id="fn"><i>V</i> = <i>Bh</i></div>
+            <div id="f">
+              <div><i>B</i> = <input type="number" id="prism_B" /></div>
+              <div><i>h</i> = <input type="number" id="prism_h" /></div>
+            </div>
+            <div class="result"><i id="i">V</i> = <span id="volume_prism_result"></span></div>
+          </div>
+          <div>
+            <div id="n">Pyramid</div>
+            <div id="fn"><i>V</i> = 1/3(<i>Bh</i>)</div>
+            <div id="f">
+              <div><i>B</i> = <input type="number" id="pyramid_B" /></div>
+              <div><i>h</i> = <input type="number" id="pyramid_h" /></div>
+            </div>
+            <div class="result"><i id="i">V</i> = <span id="volume_pyramid_result"></span></div>
+          </div>
+
+          <div>
+            <div id="n">Parallelepiped</div>
+            <div id="fn">
+              <i>V</i> = <i>abc</i>√<i>K</i><br />
+              <i>K</i> = 1 + 2 cos(α)cos(β)cos(γ) - <br />
+              cos<sup>2</sup> (α)cos<sup>2</sup>(β) cos<sup>2</sup>(γ)
+            </div>
+            <div id="f">
+              <div><i>a</i> = <input type="number" id="para_a" /></div>
+              <div><i>b</i> = <input type="number" id="para_b" /></div>
+              <div><i>c</i> = <input type="number" id="para_c" /></div>
+
+              <div><i>α</i> = <input type="number" id="para_al" /></div>
+              <div><i>β</i> = <input type="number" id="para_be" /></div>
+              <div><i>γ</i> = <input type="number" id="para_ga" /></div>
+            </div>
+            <div class="result"><i id="i">V</i> = <span id="volume_parallelepiped_result"></span></div>
+          </div>
+          <div>
+            <div id="n">Regular Tetrahedron</div>
+            <div id="fn"><i>V</i> = √(2) / 12 a<sup>3</sup></div>
+            <div id="f">
+              <div><i>a</i> = <input type="number" id="tetrahedron_a"></div>
+            </div>
+            <div class="result"><i id="i">V</i> = <span id="volume_tetrahedron_result"></span></div>
+          </div>
+
+          
+        </div>
+      </div>
+
+      <div class="transition" id="b_1">
         <div id="sub"><a href="#formulas" id="formulas" class="sbt">Formulas</a></div>
         <div id="cont">
           <div>
             <div id="n">Quadratic formula</div>
             <div id="fn"><i>x</i> = <i>-b</i> &#177; &#8730;(<i>b</i><sup>2</sup>-4<i>ac</i>) /2<i>a</i></div>
-
             <div id="f">
               <div><i>a</i> = <input type="number" id="fq_a" /></div>
               <div><i>b</i> = <input type="number" id="fq_b" /></div>
@@ -136,7 +192,6 @@
             </div>
             <div class="result"><i>x</i> = <span id="quadratic_result"></span> or <span id="quadratic_result_2"></span></div>
           </div>
-
           <div>
             <div id="n">Distance formula</div>
             <div id="fn">
@@ -144,45 +199,129 @@
               ><sub>1</sub>)<sup>2</sup>]
             </div>
             <div id="f">
-              <div><i>x<sub>1</sub></i> = <input type="number" id="df_x1"/></div>
-              <div><i>x<sub>2</sub></i> = <input type="number" id="df_x2"/></div>
-              <div><i>y<sub>1</sub></i> = <input type="number" id="df_y1"/></div>
-              <div><i>y<sub>2</sub></i> = <input type="number" id="df_y2"/></div>
+              <div>
+                <i>x<sub>1</sub></i> = <input type="number" id="df_x1" />
+              </div>
+              <div>
+                <i>x<sub>2</sub></i> = <input type="number" id="df_x2" />
+              </div>
+              <div>
+                <i>y<sub>1</sub></i> = <input type="number" id="df_y1" />
+              </div>
+              <div>
+                <i>y<sub>2</sub></i> = <input type="number" id="df_y2" />
+              </div>
             </div>
             <div class="result"><i>d</i> = <span id="distance_formula"></span></div>
           </div>
-
           <div>
             <div id="n">Mid-point formula</div>
             <div id="fn">
               <i>M</i> = [(<i>x</i><sub>1</sub> + <i>x</i><sub>2</sub>)/ 2 , (<i>y</i><sub>1</sub> + <i>y</i><sub>2</sub>)/ 2]
             </div>
-
             <div id="f">
-              <div><i>x<sub>1</sub></i> = <input type="number" id="mp_x1"/></div>
-              <div><i>x<sub>2</sub></i> = <input type="number" id="mp_x2"/></div>
-              <div><i>y<sub>1</sub></i> = <input type="number" id="mp_y1"/></div>
-              <div><i>y<sub>2</sub></i> = <input type="number" id="mp_y2"/></div>
+              <div>
+                <i>x<sub>1</sub></i> = <input type="number" id="mp_x1" />
+              </div>
+              <div>
+                <i>x<sub>2</sub></i> = <input type="number" id="mp_x2" />
+              </div>
+              <div>
+                <i>y<sub>1</sub></i> = <input type="number" id="mp_y1" />
+              </div>
+              <div>
+                <i>y<sub>2</sub></i> = <input type="number" id="mp_y2" />
+              </div>
             </div>
-
             <div class="result"><i id="i">M</i> = <span id="mp_formula"></span></div>
           </div>
-
+          <div>
+            <div id="n">Slope of a line</div>
+            <div id="fn"><i>m</i> = <i>y</i><sub>2</sub> – <i>y</i><sub>1</sub> / <i>x</i><sub>2</sub> – <i>x</i><sub>1</sub></div>
+            <div id="f">
+              <div>
+                <i>x<sub>1</sub></i> = <input type="number" id="sl_x1" />
+              </div>
+              <div>
+                <i>x<sub>2</sub></i> = <input type="number" id="sl_x2" />
+              </div>
+              <div>
+                <i>y<sub>1</sub></i> = <input type="number" id="sl_y1" />
+              </div>
+              <div>
+                <i>y<sub>2</sub></i> = <input type="number" id="sl_y2" />
+              </div>
+            </div>
+            <div class="result"><i>m</i> = <span id="soal"></span></div>
+          </div>
           <div>
             <div id="n">Arcosine</div>
-            <div id="fn">
-            <i>arccot</i>(<i>x</i>)
-            </div>
-
+            <div id="fn">arccot <i>x</i></div>
             <div id="f">
-              <div><i>x</i> = <input type="number" id="arccot_x" placeholder="0"></div>
+              <div><i>x</i> = <input type="number" id="arccot_x" placeholder="0" /></div>
             </div>
             <div class="result"><i>arccot</i> = <span id="arccot"></span></div>
           </div>
-
+          <div>
+            <div id="n">Sine</div>
+            <div id="fn">sin <i>x</i></div>
+            <div id="f">
+              <div><i>x</i> = <input type="number" id="sin_x" placeholder="0" /></div>
+            </div>
+            <div class="result"><i>sin</i> = <span id="sin"></span></div>
+          </div>
+          <div>
+            <div id="n">Temperature (&#8451; to &#8457;)</div>
+            <div id="fn"><i>F</i> = <i>C</i>(5/9) + 32</div>
+            <div id="f">
+              <div><i>C</i> = <input type="number" id="c_to_f" placeholder="0" /></div>
+            </div>
+            <div class="result"><i id="i">F</i> = <span id="f_result"></span>&deg;</div>
+          </div>
+          <div>
+            <div id="n">Temperature (&#8457; to &#8451;)</div>
+            <div id="fn"><i>C</i> = (<i>F</i> - 32) · 5/9</div>
+            <div id="f">
+              <div><i>F</i> = <input type="number" id="f_to_c" placeholder="0" /></div>
+            </div>
+            <div class="result"><i id="i"> &#8451;</i> = <span id="c_result"></span>&deg;</div>
+          </div>
+          <div>
+            <div id="n">Temperature (&#8451; to &deg;K)</div>
+            <div id="fn"><i>K</i> = <i>C</i> + 273.15</div>
+            <div id="f">
+              <div><i>C</i> = <input type="number" id="c_to_k" placeholder="0" /></div>
+            </div>
+            <div class="result"><i id="i">&deg;K</i> = <span id="k_result"></span>&deg;</div>
+          </div>
+          <div class="p_up">
+            <div id="n">Temperature (&deg;K to &#8451;)</div>
+            <div id="fn"><i>C</i> = <i>K</i> - 273.15</div>
+            <div id="f">
+              <div><i>K</i> = <input type="number" id="k_to_c" placeholder="0" /></div>
+            </div>
+            <div class="result"><i>&#8451;</i> = <span id="k2_result"></span>&deg;</div>
+          </div>
+          <div class="p_up">
+            <div id="n">Temperature (&deg;K to &#8457;)</div>
+            <div id="fn"><i>F</i> = (<i>K</i> - 273.15) · 9/5 + 32</div>
+            <div id="f">
+              <div><i>K</i> = <input type="number" id="k_to_f" placeholder="0" /></div>
+            </div>
+            <div class="result"><i id="i">&#8457;</i> = <span id="k3_result"></span>&deg;</div>
+          </div>
+          <div class="p_up">
+            <div id="n">Temperature (&#8457; to &deg;K)</div>
+            <div id="fn"><i>K</i> = (<i>F</i> - 32) · 5/9 + 273.15</div>
+            <div id="f">
+              <div><i>F</i> = <input type="number" id="f_to_k" placeholder="0" /></div>
+            </div>
+            <div class="result"><i id="i">&deg;K</i> = <span id="f2_result"></span></div>
+          </div>
         </div>
       </div>
     </article>
     <script src="app.js"></script>
   </body>
 </html>
+

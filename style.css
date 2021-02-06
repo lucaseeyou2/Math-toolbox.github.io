@@ -16,9 +16,9 @@ body {
 nav {
   background-color: #232931;
   height: 100vh;
-  width: 25vh;
   box-shadow: 1.35vh 0px #393e46;
   display: inline-block;
+  overflow: hidden;
 }
 
 #title {
@@ -59,7 +59,7 @@ article::-webkit-scrollbar {
   height: 54.127vh;
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
 }
 #n {
   margin-top: 2.706vh;
@@ -70,7 +70,11 @@ article::-webkit-scrollbar {
 
 /* Shapes */
 
-#square,#rectangle,#circle,#ellipse,#parallelogram {
+#square,
+#rectangle,
+#circle,
+#ellipse,
+#parallelogram {
   background-color: #393e46;
   box-shadow: 2.029vh 2.029vh #232931;
   margin: auto;
@@ -170,7 +174,8 @@ input[type="number"]::-webkit-outer-spin-button {
   display: none;
 }
 
-.area , .result{
+.area,
+.result {
   margin-left: 2.706vh;
   margin-top: 4.059vh;
   font-size: 2.706vh;
@@ -197,46 +202,61 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 100px;
   height: 100px;
   margin-top: 30px;
-  box-shadow: 1px 1px #232931,  2px 2px #232931, 3px 3px #232931, 4px 4px #232931, 5px 5px #232931, 6px 6px #232931,
-    7px 7px #232931, 8px 8px #232931, 9px 9px #232931, 10px 10px #232931, 11px 11px #232931, 12px 12px #232931, 13px 13px #232931,
-    14px 14px #232931, 15px 15px #232931, 16px 16px #232931, 17px 17px #232931, 18px 18px #232931, 19px 19px #232931, 20px 20px #232931,
-    21px 21px #232931, 22px 22px #232931, 23px 23px #232931, 24px 24px 0px #232931;
+  box-shadow: 1px 1px #232931, 2px 2px #232931, 3px 3px #232931, 4px 4px #232931, 5px 5px #232931, 6px 6px #232931, 7px 7px #232931,
+    8px 8px #232931, 9px 9px #232931, 10px 10px #232931, 11px 11px #232931, 12px 12px #232931, 13px 13px #232931, 14px 14px #232931,
+    15px 15px #232931, 16px 16px #232931, 17px 17px #232931, 18px 18px #232931, 19px 19px #232931, 20px 20px #232931, 21px 21px #232931,
+    22px 22px #232931, 23px 23px #232931, 24px 24px 0px #232931;
 }
 
-#cuboid{
+#cuboid {
   margin: auto;
   background-color: #393e46;
   width: 200px;
   height: 100px;
   margin-top: 30px;
-  box-shadow: 1px 1px #232931,  2px 2px #232931, 3px 3px #232931, 4px 4px #232931, 5px 5px #232931, 6px 6px #232931,
-    7px 7px #232931, 8px 8px #232931, 9px 9px #232931, 10px 10px #232931, 11px 11px #232931, 12px 12px #232931, 13px 13px #232931,
-    14px 14px #232931, 15px 15px #232931, 16px 16px #232931, 17px 17px #232931, 18px 18px #232931, 19px 19px #232931, 20px 20px #232931,
-    21px 21px #232931, 22px 22px #232931, 23px 23px #232931, 24px 24px 0px #232931;
+  box-shadow: 1px 1px #232931, 2px 2px #232931, 3px 3px #232931, 4px 4px #232931, 5px 5px #232931, 6px 6px #232931, 7px 7px #232931,
+    8px 8px #232931, 9px 9px #232931, 10px 10px #232931, 11px 11px #232931, 12px 12px #232931, 13px 13px #232931, 14px 14px #232931,
+    15px 15px #232931, 16px 16px #232931, 17px 17px #232931, 18px 18px #232931, 19px 19px #232931, 20px 20px #232931, 21px 21px #232931,
+    22px 22px #232931, 23px 23px #232931, 24px 24px 0px #232931;
 }
 
-#transition{
+.transition {
   transform: translateY(500px);
 }
 
-#fn{
+#fn {
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   margin-top: 30px;
   font-size: 25px;
 }
 
-.result{
+.result {
   text-transform: lowercase;
 }
 
-.sbt{
+.sbt {
   color: black;
   text-decoration: none;
   cursor: normal;
   outline: none;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-top: 100px;
 }
 
-#i{
+#i {
   text-transform: capitalize;
+}
+
+.p_up {
+  padding-top: 50px;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+#b_1{
+  transform: translateY(1000px);
 }

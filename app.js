@@ -80,10 +80,26 @@ setInterval(() => {
   let t = dc.getElementById("volume_parallelepiped_result"); 
   t.innerHTML = (m * n * o) * (Math.sqrt(
     1 + 2 * (Math.cos(p) + Math.cos(r) + Math.cos(s) - Math.pow(Math.cos(p),2) - Math.pow(Math.cos(r), 2) - Math.pow(Math.cos(s), 2))
-  ))
+  )); 
+  // Tetrahedron
   let u = dc.getElementById("tetrahedron_a").value; 
   let v = dc.getElementById("volume_tetrahedron_result"); 
   v.innerHTML = (Math.sqrt(2)/12) * Math.pow(u, 3); 
+  // Sphere
+  let w = dc.getElementById("sphere_r").value; 
+  let x = dc.getElementById("volume_sphere_result"); 
+  x.innerHTML = (4/3) * Math.PI * Math.pow(w, 3); 
+  // Ellipsoid
+  let y = dc.getElementById("ellipsoid_a").value;
+  let z = dc.getElementById("ellipsoid_b").value;
+  let aa = dc.getElementById("ellipsoid_c").value;
+  let ab = dc.getElementById("volume_ellipsoid_result");
+  ab.innerHTML = (4/3) * Math.PI * y*z*aa; 
+  // Cylinder
+  let ac = dc.getElementById("c_cylinder_r").value; 
+  let ad = dc.getElementById("c_cylinder_r").value; 
+  let ae = dc.getElementById("volume_cylinder_result");
+  ae.innerHTML = Math.PI * Math.pow(ac, 2) * ad;
 }, 1000);
 // Formulas
 setInterval(() => {
